@@ -8,9 +8,25 @@ don't work, this one might help.
 
 It is known to support these printers:
 
+* Brother HL-L2340D
 * Brother DCP-7030
 * Brother DCP-7055
 * Brother DCP-7065DN
+* Any? Brother Monochrome Laser printer?
+
+Installation
+---------
+
+Deb/Ubuntu:
+
+1. apt-get install cups build-essential libcups2-dev libcupsimage2-dev automake
+2. cd /usr/src && git clone https://github.com/bitbakers/brlaser.git
+3. ./autogen.sh
+4. make
+5. make install clean
+6. service cups restart
+7. Add printer via CUPS interface & select any ", using brlaser v3 Modell"
+
 
 Copyright
 ---------
